@@ -1,0 +1,997 @@
+
+.Banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: var(--Black) url('../images/bg.png') ;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+.Header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 5%;
+    width: 100%;
+}
+.Header .Logo{
+    width: 180px;
+    display: block;
+}
+
+.Menu{
+    width: auto;
+    margin: auto 0;
+}
+
+.Menu ul{
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+
+.Menu ul li{
+    margin: 0 15px;
+}
+.Menu ul li a{
+
+    color:var(--Grey) ;
+   position: relative;
+   padding-bottom: 10px;
+   transition: all .3s;
+}
+.Menu ul li a:hover, .Menu ul li a.Active{
+    transition: all .3s;
+    color:var(--White) ;
+  }
+.Menu ul li a:after{
+   width: 0;
+   height: 2px;
+   position: absolute;
+   bottom: 0;
+   content: '';
+   background:var(--White) ;
+   opacity: 0;
+   left: 0;
+   transform-origin: left;
+   transition: all .3s;
+
+ }
+
+ .Menu ul li a:hover:after, .Menu ul li a.Active:after{
+    width: 100%;
+    opacity: 1;
+    transition: all .3s;
+  }
+
+  .ContactButtons{
+      display: flex;
+      flex-flow: row wrap;
+      margin: auto 0;
+  }
+  .ContactButtons a{
+    transition: all .3s;
+    color:var(--White);
+    display: block;
+    height: auto;
+    width: 175px;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.ContactButtons a i{
+    padding-right: 5px;
+}
+.CallButton{
+    width: 190px;
+    background:var(--Red) ;
+}
+
+
+.MainContent{
+    width: 45%;
+    margin: auto 0;
+    padding: 5% 5%;
+    background: #ffffff08;
+    border-top-right-radius: 260px;
+    border-bottom-right-radius: 260px;
+    transform: translateY(50px);
+}
+.MainContent h1{
+    font-size: 44px;
+    max-width: 328px;
+    line-height: 44px;
+    color:var(--White) ;
+}
+.MainContent h1 span{
+    font-size: 27px;
+    display: block;
+    font-weight: 300;
+
+}
+.MainContent p{
+    font-size: 16px;
+    max-width: 444px;
+    line-height: 26px;
+    color:var(--Grey) ;
+    padding-top: 20px;
+   
+}
+.MainContent .Button{
+margin-top: 25px;
+}
+.ButtonDark{
+    font-size: 16px;
+    max-width: 150px;
+    text-align: center;
+    background: var(--G2);
+    color:var(--White) ;
+    padding:10px 10px;
+    display: block;
+    box-shadow: rgba(0,0,0,0.5)0 3px 6px;
+    transition: all .3s;
+    border-radius: 50px;
+}
+.ButtonDark:hover{
+  
+    background: var(--Red);
+    box-shadow: rgba(211, 206, 206, 0.1) 0 4px 8px;
+    transition: all .3s;
+
+}
+.Slider{
+    width: 40%;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+}
+.Slide{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+.OfferAndName{
+    width: auto;
+    color: var(--White);
+    display: flex;
+    flex-flow: row wrap;
+    margin:  auto;
+    position: relative;
+    z-index: 9;
+}
+
+.OfferAndName h4{
+    font-size: 28px;
+    width: 120px;
+    text-align: right;
+    margin: auto 0;
+}
+
+.OfferAndName h3{
+    font-size: 42px;
+    width: auto;
+    text-align: left;
+    line-height: 42px;
+    padding-left: 25px;
+    position: relative;
+    margin-left: 25px;
+}
+
+.OfferAndName h3:before{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: var(--White);
+}
+.OfferImage{
+    width: 100%;
+    margin-top:20px;
+    display: flex;
+    justify-content:center;
+flex-flow: row wrap;
+}
+
+.OfferBG{
+    width: 100%;
+    height: 350px;
+    max-width: 350px;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    border-radius: 300px;
+    transform: translateX(30px);
+}
+.BookNowBtn{
+    width: 130px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0;
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 58px;
+    bottom: -65px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.LamboBG{
+    background: #FF6100;
+  
+    
+}
+.CarImage{
+    position: relative;
+    z-index: 5;
+    top: 40px;
+}
+
+.Switches{
+    width: calc(5% + 0px);
+    padding: 10px 15px;
+    display: flex;
+    flex-flow:  row wrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+    right: 0px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    height: 45%;
+    z-index: 88;
+    background: var(--B3) ;
+    padding-top: 95px;
+    min-width: 70px;
+    min-height: 350px;
+
+}
+
+
+
+.Switches:before{
+    width: 40px;
+    height: 90px;
+    display: flex;
+    flex-flow:  row wrap;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: 88;
+    background: var(--Black) ;
+    content: '';
+}
+
+.Social{
+    width: 56px;
+    bottom:30px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Social ul{
+    width: 56px;
+    margin: 0 auto;
+    padding-inline-start: 0px;
+    margin: 0 !important;
+    display: block;
+}
+
+.Social ul li{
+    width: 56px;
+    height: 56px;
+    background: rgba(0,0,0,0.20);
+    padding: 8px;
+    border-radius: 35px;
+    margin-top: 10px;
+}
+.Social ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(255,255,255,0.04);
+    padding: 8px;
+    border-radius: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--Red);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DUMMY CSS */
+
+
+
+
+.about_sectIOn {
+	width: 95%;
+	margin: 0 0 0 5%;
+	padding: 5% 0 0 0;
+	position: relative;
+}
+.about_left {
+	width: 38%;
+	box-sizing: border-box;
+	padding: 0 0;
+	float: left;
+}
+.about_bg {
+	width: 62%;
+	float: right;
+	box-sizing: border-box;
+	padding: 0 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 90%;
+	background: url(../images/about-bg.jpg);
+	background-size: cover;
+	background-position: center right;
+}
+.about_left h2 {
+	color: #404040;
+	font-size: 15px;
+	letter-spacing: 18px;
+	text-transform: uppercase;
+	text-align: right;
+	padding-bottom: 30px;
+	padding-right: 20%;
+	box-sizing: border-box;
+	width: 100%;
+}
+.about_left h1 {
+	color: #404040;
+	font-size: 67px;
+	line-height: 72px;
+	text-align: right;
+	font-weight: 500;
+	padding-right: 20%;
+	box-sizing: border-box;
+	width: 100%;
+}
+.about_left_image {
+	width: 100%;
+	padding-top: 15%;
+}
+.about_content_absolute {
+	background: rgba(255, 0, 0, 0.95);
+	position: absolute;
+	left: 35%;
+	top: 0;
+	padding: 5% 3% 3%;
+	box-sizing: border-box;
+	width: 36%;
+}
+.about_content_absolute h1 {
+	text-align: left;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 39px;
+	color: #fff;
+	line-height: 35px;
+	padding-bottom: 20px;
+}
+.about_content_absolute h1 span {
+	font-size: 18px;
+	letter-spacing: 5px;
+}
+.about_content_absolute p {
+	text-align: left;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	line-height: 27px;
+	padding-bottom: 20px;
+}
+.about_Read {
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #fff !important;
+	font-size: 14px;
+	padding: 10px 0;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fff;
+}
+
+
+.categories{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0% 0;
+}
+
+.categories h2{
+	width: 100%;
+	font-size: 42px;
+	line-height: 52px;
+	width: 90%;
+	color: #101010;
+	max-width: 594px;
+	padding: 88px 0 0;
+	position: relative;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto;
+}
+.categories-carousel{
+	width: 100%;
+	margin: 5% 0;
+}
+.furiniture-category-item{
+	width: 100%;
+	position: relative;;
+	overflow: hidden;
+	cursor: pointer; 
+}
+
+
+.category-titles{
+    position:   relative;
+    right: 0;
+    top:10%;
+    z-index: 99;
+    
+}
+
+
+.category-titles h1{
+   box-sizing: border-box;
+   color: #fff;
+   line-height: 40px;
+   font-size: 16px;
+   width: 100%;
+   transition:  all .3s;
+   padding-top: 10px;
+   font-weight: 500;
+   position: absolute;
+   bottom: 0;
+   padding: 0  28px 8px;
+}
+.category-titles br{
+	display: none;
+}
+
+.category-titles h1 span{
+	width: 100%;
+	font-size: 28px;
+	font-weight: bold;
+}
+.category-titles p{
+    	width: 100%;
+    box-sizing: border-box;
+    color:#333;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+     transition:  all .3s;
+	padding-top: 10px !important;
+	display: block;
+}
+
+
+
+.category-image {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.category-image img{
+
+    transition:  all .3s;
+        transform: scale(1,1) translatex(0%);
+  
+    
+}
+
+.furiniture-category-item:hover .category-image img{
+        transition:  all .3s;
+     filter: grayscale(0%);
+    
+ 
+}
+
+
+.category-image:after{content: '';display: block;background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0, 0, 0, 0.1) 100%);transition:  all .3s;position: absolute;z-index: 70;height: 100%;left: 0;top: 0;width: 100%;opacity: 0.4;}
+.furiniture-category-item:hover .category-image:after{
+	opacity: .4;
+}
+
+.furiniture-category-item:hover .category-image img{
+        transition:  all .3s;
+    transform: scale(1.1,1.1) translatex(-2%);
+
+   
+    
+}
+
+
+
+
+
+.footer{
+    width:100%;
+    background:#1b1f27;
+    background-size: cover;
+    
+    padding: 5% 0% 3%;
+}
+
+ .footer h1{
+    width: 100%;
+    font-size: 38px;
+    color:#fcbb15;
+    text-transform: uppercase;
+	 	font-weight: 500;
+     text-align: center;
+     padding-bottom: 20px;
+     letter-spacing: 6px;} 
+.footer h2{
+    width: 100%;
+    font-size: 19px;
+    color:#9a9a9a;
+    text-transform: uppercase;
+     text-align: center;
+	font-weight: 500;
+     padding-bottom: 20px;
+     letter-spacing: 6px;}
+
+.footer_links{
+    width:85%;
+    margin: 0 auto;
+    padding: 3% 0;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+ .footer_links ul{
+    width:100%;
+}
+
+.footer_links ul li{
+    width:33%;
+    display: inline-block;
+    text-align: left;
+    font-size: 22px;
+     color:#fff;
+     margin-top: 10px;
+}
+
+.footer_links ul li:nth-child(2){
+     text-align: center;
+    
+}
+.footer_links ul li:nth-child(3){
+     text-align: right;
+    
+}
+.footer_links ul li:nth-child(5){
+  text-align: center;
+ 
+}
+    
+.footer_bottom{
+    width:85%;
+    margin: 0 auto;
+    padding: 20px 0;
+   
+}
+.footer_social{
+    width:40%;
+    float: left;
+	max-width: 400px;
+    
+}
+ .footer_social ul{
+    width:100%;
+}
+
+.footer_social ul li{
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.footer_social ul li:nth-child(4n-3){
+     text-align: left;
+    
+}
+*/
+
+    
+.footer_social ul li a{
+  color:#b5afaf;
+    text-transform: uppercase;
+    
+}
+
+/* .footer_social ul li:nth-child(4n-3) a{
+  color:#000792;
+    
+} .footer_social ul li:nth-child(4n-2) a{
+  color:#008ea3;
+    
+}
+.footer_social ul li:nth-child(4n-1) a{
+  color:#6d370c;
+    
+}.footer_social ul li:nth-child(4n) a{
+  color:#ff0000;
+    
+}*/
+
+
+.copy_text{
+    
+    float: right;
+    width: 60%;
+}
+.copy_text p{
+    
+    text-align: right;
+    width: 100%;
+    color :#3b3b3b;
+    font-size: 16px;
+}
+.copy_text a{
+
+    color :#3b3b3b;
+   
+}
+
+
+
+
+.VieAllBrands{
+    width: 200px;
+    margin: 0 auto 60px;
+    color: var(--Black);
+    font-size: 18px;
+    line-height: 24px;
+    border:1px solid var(--Black);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.SectionBanner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:var(--Gradient) ;
+    display: flex;
+    flex-flow: column;
+	overflow: hidden;
+	margin-top: 5%;
+}
+
+
+.SectionBannerImage{
+  width: 45%;
+  display: block;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 12%;
+  max-width: 735px;
+  z-index: 2;
+}
+
+.SectionBannerImage:before{
+  width: 100%;
+  height: 100%;
+ content: '';
+ left: 0;
+ top: 0;
+ background: #000;
+ display: block;
+ position: absolute;
+ opacity: 0.4;
+}
+.SectionBannerImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.SectionBannerText{
+  position: absolute;
+  bottom: 15%;
+  padding-left: 140px;
+  z-index: 5;
+  left: 5%;}
+
+  .SectionBannerText h1{
+ color: var(--White);
+ font-size: 96px;
+ line-height: 96px;
+ padding-bottom: 30px;
+
+}
+
+.SectionBannerText p{
+  color: #e2e2e2;
+  font-size: 24px;
+  line-height: 30px;
+  max-width: 600px;
+ 
+ }
+ .SectionBannerText  p span{
+     font-weight: bold;
+   
+   }
+   
+  .SectionBanner:before{
+    background: url(../images/pattern-bg.png);
+    background-size: 30px;
+    background-repeat: repeat;
+    width: 5%;
+    height: 30%;
+    content: '';
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+
+  }
+  .SectionBanner:after{
+    background: url(../images/pattern-bg.png);
+    background-size: 30px;
+    background-repeat: repeat;
+    width: 205px;
+    height: 205px;
+    right: 5%;
+    content: '';
+    bottom: -60px;
+    position: absolute;
+    z-index: 1;
+
+  }
+
+.SectionBannerButton{
+  width: auto;
+  display: flex;
+  width: auto;
+  margin-top: 60px;
+    max-width: 270px;
+}
+.SectionBannerButton .ButtonIcon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background:rgba(255, 0, 0, 0.20);
+  display: flex;
+  justify-content: space-between;
+  color: var(--White);
+
+  
+}
+.SectionBannerButton .ButtonIcon i{
+margin: auto auto;
+width: 20px;
+font-size: 20px;}
+
+.SectionBannerButton .ButtonText{
+ 
+display: flex;
+ 
+justify-content: space-between;
+ 
+color: var(--White);
+ 
+margin: auto 0;
+ 
+padding-left: 10px;
+ 
+font-size: 16px;
+ 
+max-width: 270px;
+}
+
+  
+.CarListing{
+    width: 100%;
+    padding: 5% 5%;
+    margin: 0 auto;
+    background: #f7f7f7;
+}
+
+.CarListing h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--Black);
+    padding: 20px 0 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.CarListing h2:after {
+    width: 20%;
+    margin: 25px 0 0;
+    height: 2px;
+    position: relative;
+    background: rgba(255,102,0,1);
+    background: linear-gradient(to right, rgba(255,102,0,1) 40%, rgba(255,102,0,1) 55%, rgba(242,242,242,0) 100%);
+    content: "";
+    display: block;
+    margin: 35px auto 0;
+}
+
+
+.CarListing p {
+    font-size: 17px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    color: #6f6f6f;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+/*
+ * CarsList card
+ */
+ .CarsList {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    margin-top: 50px;
+  }
+  .CarsList:after{
+    content: '';
+    flex: auto;
+    
+  }
+  .CarsList .CarsListItem{
+    width: calc(33.33% - 14px);
+    display: block;
+    margin: 25px 20px 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,0.05) 0px 6px 10px 0px;
+  }
+  .CarsList .CarsListItem:nth-child(3n){
+    margin-right: 0;
+  }
+  .CarsList .CarsListItem .PriceAndBook {
+    font-size: 0;
+    padding: 0 0 0 0;
+}
+.CarsList .CarsListItem .PriceAndBook .Price  del{
+    display: none;
+}
+.CarsList .CarsListItem .PriceAndBook .Price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 0 5px;
+}
+.CarsList .CarsListItem .PriceAndBook .Price span {
+    color: #ca1818;
+    font-size: 20px;
+    font-weight: 700;
+}
+.CarsList .CarsListItem .PriceAndBook .Price del span {
+    color: #b79999;
+    font-size: 13px;
+    margin: 0 10px 0 0;
+    text-indent: 0;
+    text-decoration: line-through;
+}
+
+
+.CarsList .CarsListItem .PriceAndBook .Book {
+
+    height: 100%;
+    float: right;
+}
+.CarsList .CarsListItem .PriceAndBook .Book  a {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 16px;
+    display: block;
+    padding: 11px 21px;
+    font-weight: 700;
+    background: #848484;
+    border-radius: 37px;
+    margin-top: -10px;
+    transition: all .3s;
+}
+.CarsList .CarsListItem .PriceAndBook .Book  a:hover{
+    background: #e70b0b;
+    transition: all .3s;
+}
+
+
+.CarsListImage{
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+    display: block;
+}
+.CarsListImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.CarsListInfo{
+    background: #ffffff;
+    width: 100%;
+    padding:10px 20px;
+}
+.CarTitle{
+    width: 100%;
+
+}
+
+.CarTitle span.Brand{
+    width: 100%;
+    color: #a5a5a5;
+}
+.CarTitle h3{
+    width: 100%;
+    color:var(---B2);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+

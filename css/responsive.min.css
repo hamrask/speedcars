@@ -1,0 +1,851 @@
+@media screen and (max-width: 1024px){
+    .Header {
+       justify-content: space-between;
+    }
+    .Header .Logo{
+        width: 110px;
+    }
+    
+    .ContactButtons a {
+       
+        margin-top: 0px;
+    }
+    .Banner{
+        flex-flow: column-reverse;
+        height:  auto;
+    }
+    
+    .MainContent{
+    width: 100%;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 262px;
+    position: relative;
+    transform: none;
+    padding: 73px 20px;
+    }
+    .Menu {
+       display: none;
+    }
+    .Menu ul li {
+        margin: 0 10px;
+    }
+    
+    .MainContent h1 {
+        font-size: 23px;
+        max-width: 316px;
+        line-height: 28px;
+        color: var(--White);
+        text-align: center;
+        margin: 0 auto;
+    }
+    .MainContent p {
+        color: #afafaf;
+        text-align: center;
+       
+    }
+    .MainContent .Button{
+        margin: 65px auto 0;
+    }
+    .MainContent h1 span {
+        font-size: 22px;
+    }
+    .Switches{
+        /* position: fixed; */
+        height: 160px;
+        max-height: 150px;
+        top: 140px;
+        display: none;
+    }
+    .Switches:before {
+        width: 24px;}
+    .Slider{
+        position: relative;
+        width: 100%;
+        bottom: auto;
+        overflow: hidden;
+        right: auto;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 67px 0 0;
+    }
+   
+    .OfferBG {
+        width: 449px;
+        max-width: none;
+        height: 100%;
+        border-radius: 0;
+        border-top-left-radius: 260px;
+        border-top-right-radius: 0;
+        transform: translateY(118px);
+    }
+    .Slide {
+        flex-flow: column-reverse wrap;
+        transform: translateY(-50%);
+        top: 50%;
+        position: relative;
+    }
+    .OfferAndName{margin-top: 17px;margin-bottom: -36px;}
+    .OfferAndName h4 {
+        font-size: 16px;
+        width: auto;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    .OfferAndName h3 {
+        font-size: 26px;
+        line-height: 26px;
+        padding-top: 10px;
+        color: #fff;
+        margin-left: 23px;
+    }
+    .OfferAndName h3:before {
+    opacity: .4;
+    }
+
+    .CarImage {
+        position: relative;
+        z-index: 5;
+        top: 26px;
+        width: 100%;
+        right: -42px;
+    }
+
+    .BookNowBtn{
+        position: relative;
+        margin: 0 auto;
+        right: auto;
+        background: #fff;
+        color: #000;
+        width: 164px;
+    }
+   
+
+
+	.SectionBannerImage {
+		width: 100%;
+		display: block;
+		height: calc(100vh - 100px);
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 435px;
+		z-index: 2;
+    }
+    
+	.SectionBannerText h2 {
+		color: var(--White);
+		font-size: 24px;
+		line-height: 29px;
+		padding-bottom: 30px;
+	}
+	.SectionBannerText {
+		position: absolute;
+		bottom: 15%;
+		padding-left: 36px;
+		z-index: 5;
+		left: 0;
+		box-sizing: border-box;
+		padding-bottom: 52px;
+    }
+    .SectionBannerButton {
+        position: absolute;
+        bottom: -74px;
+        z-index: 8888;
+    }
+
+
+    .CarListing {
+       
+        padding: 5% 3% 50px;
+    }
+
+    .CarListing h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--Black);
+        padding: 20px 0 35px;
+        
+    }
+    .CarsList .CarsListItem{
+        width: 100%;
+        margin: 10px 0 0 !important;
+        
+    }
+.CarsList .CarsListItem .PriceAndBook .Price{
+    display: block;
+}
+.CarsListInfo *{
+    text-align: center !important;
+}
+    .CarsList .CarsListItem .PriceAndBook .Book {
+    
+float: none;
+    
+width: 160px;
+    
+margin: 4px auto 15px;
+    }
+}
+    
+
+
+    
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 980px) {
+    .HiddenInMob{
+        display: none;
+    }
+    body {
+        width: 100%;
+        overflow-x: hidden !important;
+    }
+        
+        .about_sectIOn {
+        width: 100%;
+        margin: 0 0 0;
+    
+        position: relative;
+    }
+    .about_left {
+        width: 100%;
+        float: none;
+    }
+        
+        .about_content_absolute {
+      
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 8% 5% 10%;
+      
+        width: 100%;
+    }
+        
+        .about_Read {
+            letter-spacing: 2px;}
+    
+       
+    
+    .about_left h1 {
+        color: #404040;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 500;
+        padding-right: 0;
+      
+    }.about_left h1  br{
+        display: none;
+       
+    }
+        .about_left h2 {
+        
+        font-size: 14px;
+        letter-spacing: 4px;
+      
+        text-align: center;
+        padding-bottom: 18px;
+        padding-right: 0;
+      
+        width: 100%;
+    }
+    
+        .about_bg{
+            display: none;
+        }
+    
+    
+    
+        .furiniture-category-item{
+            border:1px solid #f1f1f1;
+            padding-bottom: 15px;
+        }
+    .category-titles h1 {
+    
+    
+        line-height: 32px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+     
+    }
+        
+        .category-image::after {
+            opacity: .2 !important;
+        }
+        
+    
+    .categories{
+        width: 100%;
+    }
+    .categories h2 {
+        width: 100%;
+        font-size: 22px;
+        background-color: #ffffff;
+        max-width: 100%;
+        padding: 50px 5% 14px;
+        left: auto;
+        color: #000;
+        line-height: 27px;
+    }
+        
+        .category-titles h1 span {
+    
+        font-size: 32px !important;
+    }
+        
+        .category-titles p {
+    
+        font-size: 12px !important;
+        text-align: center;
+    }
+    
+    .footer {
+     
+        padding: 10% 0% 3%;}
+        
+        
+        .footer h2 {
+        width: 90%;
+        font-size: 16px;
+       
+        letter-spacing: 0px;
+        margin: 0 auto;
+    }
+    
+        .footer_links ul li {
+        width: 100%;
+       
+        text-align: left !important;
+        font-size: 17px;
+            padding: 5px 0;
+        
+    }
+    .footer_links {
+        width: 90%;
+        padding: 3% 0 6%;}
+    
+    
+    .footer h1 {
+       
+        font-size: 26px;
+      
+        padding-bottom: 20px;
+        letter-spacing: 0px;
+    }
+        .footer_social ul li {
+        width: 24%;
+     
+            font-size: 11px;}
+    
+        
+        .footer_social {
+        width: 100%;
+        float: left;
+        max-width: 400px;
+    }
+    
+        .copy_text{
+            width:100% ;
+            padding-top: 20px;
+            
+        }.copy_text p{
+            width:100% ;
+            font-size: 14px;
+            text-align: center;
+            line-height: 18px;
+            
+        }
+        .about_left_image {
+        width: 100%;
+        padding-top: 42px;
+    }
+    .contact-section{height: auto;min-height: 100vh;box-sizing: border-box;padding-top: 120px;padding-bottom: 20px;}
+    .map-detials{
+        top: auto !important;
+        margin-top: 0; 
+    }
+    
+    .contact-banner {
+        float: none;
+        height: 150px;
+        display: none;
+        width: 100%;}
+        .contact-map{
+            height: 250px;
+            width: 100%;
+            float: none;
+        }
+    
+        .contact-details-center {
+        width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        height: 80%;
+        z-index: 9998;
+        background: red;
+        background: #fff;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 40px 5% 40px;
+        text-align: center;
+    }
+    .about_content_absolute h1 {
+        text-align: center;
+        font-size: 28px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+    .about_content_absolute h1 span {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+    .about_content_absolute p{
+text-align: justify;
+    }
+
+
+/* 2021 CSS  */
+.InnnerBanner h1 {
+    width: 100%;
+    padding: calc(10% + 57px) 50px 10% 50px;
+    font-size: 29px;
+    
+    line-height: 31px;
+}
+/* DETAIL PAGE  */
+.CarDetailPage {
+    padding-top: 58px;
+}
+.CarDetailPage .DetailsTitleBar {
+    width: 100%;
+    padding: 16px 15px 9px;
+    top: 0px;
+    position: fixed;
+    background: #000;
+    color: #fff;
+}
+.CarDetailPage .DetailsTitleBar .BrandAndModel .BackToBtn {
+    
+    color: #ffffff;
+    font-size: 24px;
+}
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Brand{
+    /* display: none; */
+    width: 34px;
+    height: 34px;
+}
+.CarDetailPage .DetailsTitleBar .WhatsappBookBtn{
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    display: none;
+}
+.CarDetailPage .DetailsTitleBar .BrandAndModel {
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Model span {
+ 
+    border-right: 1px solid;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Model span:last-of-type {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.CarDetailPage .ViewDetailsAndImages{
+    flex-flow: column-reverse wrap;
+    width: 100%;
+    padding: 0;
+    margin-top: 0px;
+    
+}
+.CarDetailPage .ViewDetailsAndImages .ViewImages {
+    width: 100%;
+    position: relative;
+    
+    
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails {
+    width: 100%;
+    padding: 20px 5%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle {
+
+    padding: 2px 0;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .PriceBlock {
+    width: 48%;
+    display: flex;
+    height: 70px;
+}
+.lSPager {
+    display: none;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .PriceBlock ,
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .MonthlyBlock 
+   {
+    width: 48%;
+    display: flex;
+    height: 70px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap h5 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 12px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .RoofType ,
+ .CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .Transmission , 
+ .CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .BodyType 
+ { height: 56px;
+    
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap h3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap p {
+    font-size: 13px;
+    line-height: 15px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap {
+ 
+    margin-top: 15px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures {
+    padding: 8px 0 0;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle .BrandLogo {
+    width: 40px;
+    height: 40px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle h1 {
+    width: auto;
+    font-size: 20px;
+    margin: auto 4px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .Description p {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    padding-right: 25px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs ul li h4 {
+    width: auto;
+    font-size: 16px;
+    line-height: 18px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs ul li p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    padding-right: 25px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs {
+
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+}
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning ul li h4 {
+   
+    font-size: 13px;
+    line-height: 20px;
+}
+.CarDetailPage .ContactDetails {
+    width: 100%;
+    padding: 10px 17px;
+    position: fixed;
+    bottom: 0;
+    margin-top: 0px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+}
+.CarDetailPage .ContactDetails .DepositAndReturn .Deposit .Icon {
+    width: 14px;
+}
+.CarDetailPage .ContactDetails .DepositAndReturn .Deposit .Count {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 2px;
+    padding-bottom: 1px;
+}
+.CarDetailPage .ContactDetails .DepositAndReturn {
+    
+    width: 50%;
+}
+.CarDetailPage .ContactDetails .DepositAndReturn .Expiry {
+    font-size: 12px;
+    padding-left: 19px;
+    padding-top: 0px;
+    margin-left: 0;
+    border-left: 0;
+    /* border-top: none; */
+    opacity: 0.4;
+    font-weight: lighter;
+}
+.CarDetailPage .ContactDetails .Contacts .ContactIconText {
+    width: auto;
+    margin-left: 10px;
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.CarDetailPage .ContactDetails .Contacts .ContactIconText .ContactIcon {
+    
+    margin-right: 0px;
+}
+.CarDetailPage .ContactDetails .Contacts .ContactIconText .ContactLabel {
+   
+    display: none;
+}
+    }
+    
+    @media only screen and (min-device-width: 981px) {
+    
+    }
+    
+    
+    
+    
+    
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        
+        .header_inner {
+        position: relative;
+        width: 90%;
+        padding: 0px 5%;
+    }
+    .header {
+        width: 94%;
+       
+        height: 40px;
+      
+        padding: 7px 3%;
+    }
+    
+    .Logo_left {
+        width: 150px;
+       
+        min-width: 60px;
+    }	
+        
+        
+        .slider_overLay {
+        position: absolute;
+       
+        height: 100%;
+            top: 0;
+            left: 0;
+    
+        width: 100%;
+        
+    }
+    
+        
+        .slides-pagination a {
+        border-radius: 50%;
+    margin: 6px;
+        width: 8px;
+            height: 8px;}
+        
+        
+        .categories_slider {
+        width: 200px;
+        padding: 7% 0;
+        bottom: 25%;
+        top: auto;
+    }
+    
+    
+        
+    
+        
+        .slider_text {
+        margin: 0 0;
+        float: none;
+        position: absolute;
+        font-family: 'Quicksand', sans-serif;
+        top: 20%;
+        left: 10%;
+    }
+    .slides-pagination {
+      
+        bottom: 16%;
+        text-align: right;
+        width: auto;
+        right: 10%;
+    }
+        .categories_slider nav a {
+    
+        margin: 0px 0;
+            font-size: 18px;
+            
+       
+    }
+    
+    
+    
+    .slider_text h1 {
+        font-size: 20px;
+        line-height: 28px;
+       
+    }
+    
+        .slider_text h1 span {
+        font-size: 37px;
+       
+    
+    }
+        .slider_text h2 {
+        font-size: 19px;
+        line-height: 28px;
+        }
+        
+        
+        
+        .advertisemnt_left {
+        width: 100%;
+        float: none;
+        
+    }	.advertisemnt_right {
+        width: 100%;
+        float: none;
+        
+    }
+    
+    }
+    
+    /* (480x800) Android */
+    @media only screen and (min-width: 480px) and (max-width: 800px) {
+    /* insert styles here */
+    .advertisemnt_left .category-titles {
+    
+        right: 5% !important;
+        top: 18%;
+       
+    }
+    .advertisemnt_right .category-titles {
+    
+        left: 5%;
+        top: 18%;
+       
+    }
+        .footer_social{
+            max-width: 100%;
+                
+        }
+    .footer_social ul li {
+        width: 24%;
+        font-size: 16px;
+    }
+    .copy_text {
+        width: 100%;
+        padding-top: 30px;
+    }.copy_text p {
+        width: 100%;
+        font-size: 17px;
+        text-align: left;
+    
+    }
+        
+        .footer_links ul li {
+        width: 49%;
+       
+    }
+    .footer_links ul li {
+           width: 49%;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: left!important;
+    }
+        
+        
+        .footer_links ul li:nth-child(2n) {
+    
+     
+        text-align: right!important;
+       
+    }	
+    
+    
+    
+    
+    
+    }
+    
+    
+    /* (1024x768) iPad 1 & 2, XGA */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* insert styles here */
+        
+            .categories_slider {
+    
+        top: 58%;
+    }
+    
+    .contact-details-center p a {
+        font-size: 18px;
+       
+    }
+    }
+    
+    
+    @media only screen and (min-width: 1700px){
+        .contact-details-center{
+            padding: 6vh 3% 0;
+        }
+    
+        .contact-details-center p{
+        
+                padding-bottom: 2vh;
+        
+        
+        }
+    
+    
+    }
+    
+    
+    
+    @media only screen and (max-width: 1400px) {
+       .contact-details-center p a {
+    font-size: 16px;
+            line-height: 20px;
+        }
+       
+      }
+      @media only screen and (max-height: 700px) {
+     
+        .contact-banner {
+         
+            height: 69vh;
+        }
+       
+      }
+      
+      @media only screen and (max-height: 600px) {
+     
+         .contact-banner {
+          
+             height: 79vh;
+         }
+       }
+    
+     

@@ -1,0 +1,2093 @@
+.Banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: var(--Black)url(../images/bg.png);
+    display: flex;
+    flex-flow: column;
+    overflow: hidden
+}
+
+.Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 5%;
+    width: 100%
+}
+.HeaderDark{
+    background: #000000;
+}
+
+.Header .Logo {
+    width: 180px;
+    display: block
+}
+
+.Menu {
+    width: auto;
+    margin: auto 0
+}
+
+.Menu ul {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap
+}
+
+.Menu ul li {
+    margin: 0 15px
+}
+
+.Menu ul li a {
+    color: var(--Grey);
+    position: relative;
+    padding-bottom: 10px;
+    transition: all .3s
+}
+
+.Menu ul li a:hover,
+.Menu ul li a.Active {
+    transition: all .3s;
+    color: var(--White)
+}
+.Menu ul li a.ActiveDark {
+    transition: all .3s;
+    color: var(--Black)
+}
+
+.Menu ul li a:after {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    background: var(--White);
+    opacity: 0;
+    left: 0;
+    transform-origin: left;
+    transition: all .3s
+}
+
+.Menu ul li a:hover:after,
+.Menu ul li a.Active:after {
+    width: 100%;
+    opacity: 1;
+    transition: all .3s
+}
+
+.ContactButtons {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto 0
+}
+
+.ContactButtons a {
+    transition: all .3s;
+    color: var(--White);
+    display: block;
+    height: auto;
+    width: 175px;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 15px
+}
+
+.ContactButtons a i {
+    padding-right: 5px
+}
+
+.CallButton {
+    width: 190px;
+    background: var(--Red)
+}
+
+.MainContent {
+    width: 45%;
+    margin: auto 0;
+    padding: 5% 5%;
+    background: #fff0;
+    border-top-right-radius: 260px;
+    border-bottom-right-radius: 260px;
+    transform: translateY(50px)
+}
+
+.MainContent h2 {
+    font-size: 44px;
+    max-width: 328px;
+    line-height: 44px;
+    color: var(--White)
+}
+
+.MainContent h2 span {
+    font-size: 27px;
+    display: block;
+    font-weight: 300
+}
+
+.MainContent p {
+    font-size: 16px;
+    max-width: 444px;
+    line-height: 26px;
+    color: var(--Grey);
+    padding-top: 20px
+}
+
+.MainContent .Button {
+    margin-top: 25px
+}
+
+.ButtonDark {
+    font-size: 16px;
+    max-width: 150px;
+    text-align: center;
+    background: var(--G2);
+    color: var(--White);
+    padding: 10px 10px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, .5)0 3px 6px;
+    transition: all .3s;
+    border-radius: 50px
+}
+
+.ButtonDark:hover {
+    background: var(--Red);
+    box-shadow: rgba(211, 206, 206, .1)0 4px 8px;
+    transition: all .3s
+}
+
+.Slider {
+    width: 40%;
+    position: absolute;
+    bottom: 20%;
+    right: 10%
+}
+
+.Slide {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative
+}
+
+.OfferAndName {
+    width: auto;
+    color: var(--White);
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    position: relative;
+    z-index: 9
+}
+
+.OfferAndName h4 {
+    font-size: 28px;
+    width: 120px;
+    text-align: right;
+    margin: auto 0
+}
+
+.OfferAndName h3 {
+    font-size: 42px;
+    width: auto;
+    text-align: left;
+    line-height: 42px;
+    padding-left: 25px;
+    position: relative;
+    margin-left: 25px
+}
+
+.OfferAndName h3:before {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: var(--White)
+}
+
+.OfferImage {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap
+}
+
+.OfferBG {
+    width: 100%;
+    height: 350px;
+    max-width: 350px;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    border-radius: 300px;
+    transform: translateX(30px)
+}
+
+.BookNowBtn {
+    width: 130px;
+    background-color: rgba(255, 255, 255, .05);
+    color: #fff;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 0;
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 58px;
+    bottom: -65px;
+    font-weight: 600;
+    font-size: 16px
+}
+
+.LamboBG {
+    background: #FF6100
+}
+
+.CarImage {
+    position: relative;
+    z-index: 5;
+    top: 40px
+}
+
+.Switches {
+    width: calc(5% + 0);
+    padding: 10px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    height: 45%;
+    z-index: 88;
+    background: var(--B3);
+    padding-top: 95px;
+    min-width: 70px;
+    min-height: 350px
+}
+
+.Switches:before {
+    width: 40px;
+    height: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: 88;
+    background: var(--Black);
+    content: ''
+}
+
+.Social {
+    width: 56px;
+    bottom: 30px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.Social ul {
+    width: 56px;
+    margin: 0 auto;
+    padding-inline-start: 0;
+    margin: 0 !important;
+    display: block
+}
+
+.Social ul li {
+    width: 56px;
+    height: 56px;
+    background: rgba(0, 0, 0, .20);
+    padding: 8px;
+    border-radius: 35px;
+    margin-top: 10px
+}
+
+.Social ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(255, 255, 255, .04);
+    padding: 8px;
+    border-radius: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--Red)
+}
+
+.about_sectIOn {
+    width: 95%;
+    margin: 0 0 0 5%;
+    padding: 5% 0 0 0;
+    position: relative
+}
+
+.about_left {
+    width: 38%;
+    box-sizing: border-box;
+    padding: 0 0;
+    float: left
+}
+
+.about_bg {
+    width: 62%;
+    float: right;
+    box-sizing: border-box;
+    padding: 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+    background: url(../images/about-bg.jpg);
+    background-size: cover;
+    background-position: center right
+}
+
+.about_left h2 {
+    color: #404040;
+    font-size: 15px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-bottom: 30px;
+    padding-right: 20%;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.about_left h3 {
+    color: #404040;
+    font-size: 67px;
+    line-height: 72px;
+    text-align: right;
+    font-weight: 500;
+    padding-right: 20%;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.about_left_image {
+    width: 100%;
+    padding-top: 15%
+}
+
+.about_content_absolute {
+    background: rgba(255, 0, 0, .95);
+    position: absolute;
+    left: 35%;
+    top: 0;
+    padding: 5% 3% 3%;
+    box-sizing: border-box;
+    width: 36%
+}
+
+.about_content_absolute h1 {
+    text-align: left;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 39px;
+    color: #fff;
+    line-height: 35px;
+    padding-bottom: 20px
+}
+
+.about_content_absolute h1 span {
+    font-size: 18px;
+    letter-spacing: 5px
+}
+
+.about_content_absolute p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 27px;
+    padding-bottom: 20px
+}
+
+.about_Read {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff !important;
+    font-size: 14px;
+    padding: 10px 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff
+}
+
+.categories {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0
+}
+
+.categories h2 {
+    width: 100%;
+    font-size: 42px;
+    line-height: 52px;
+    width: 90%;
+    color: #101010;
+    max-width: 594px;
+    padding: 88px 0 0;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto
+}
+
+.categories-carousel {
+    width: 100%;
+    margin: 5% 0
+}
+
+.furiniture-category-item {
+    width: 100%;
+    position: relative;
+    ;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.category-titles {
+    position: relative;
+    right: 0;
+    top: 10%;
+    z-index: 99
+}
+
+.category-titles h3 {
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 40px;
+    font-size: 16px;
+    width: 100%;
+    transition: all .3s;
+    padding-top: 10px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    padding: 0 28px 8px
+}
+
+.category-titles br {
+    display: none
+}
+
+.category-titles h3 span {
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold
+}
+
+.category-titles p {
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    transition: all .3s;
+    padding-top: 10px !important;
+    display: block
+}
+
+.category-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+.category-image img {
+    transition: all .3s;
+    transform: scale(1, 1)translatex(0)
+}
+
+.furiniture-category-item:hover .category-image img {
+    transition: all .3s;
+    filter: grayscale(0)
+}
+
+.category-image:after {
+    content: '';
+    display: block;
+    background: linear-gradient(to right, rgba(0, 0, 0, .95)0, rgba(0, 0, 0, .1)100%);
+    transition: all .3s;
+    position: absolute;
+    z-index: 70;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: .4
+}
+
+.furiniture-category-item:hover .category-image:after {
+    opacity: .4
+}
+
+.furiniture-category-item:hover .category-image img {
+    transition: all .3s;
+    transform: scale(1.1, 1.1)translatex(-2%)
+}
+
+.footer {
+    width: 100%;
+    background: #1b1f27;
+    background-size: cover;
+    padding: 5% 0 3%
+}
+
+.footer h1 {
+    width: 100%;
+    font-size: 38px;
+    color: #fcbb15;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 6px
+}
+
+.footer h2 {
+    width: 100%;
+    font-size: 19px;
+    color: #9a9a9a;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+    letter-spacing: 6px
+}
+
+.footer_links {
+    width: 85%;
+    margin: 0 auto;
+    padding: 3% 0;
+    border-bottom: 1px solid #3b3b3b
+}
+
+.footer_links ul {
+    width: 100%
+}
+
+.footer_links ul li {
+    width: 33%;
+    display: inline-block;
+    text-align: left;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 10px
+}
+
+.footer_links ul li:nth-child(2) {
+    text-align: center
+}
+
+.footer_links ul li:nth-child(3) {
+    text-align: right
+}
+
+.footer_links ul li:nth-child(5) {
+    text-align: center
+}
+
+.footer_bottom {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0
+}
+
+.footer_social {
+    width: 40%;
+    float: left;
+    max-width: 400px
+}
+
+.footer_social ul {
+    width: 100%
+}
+
+.footer_social ul li {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.footer_social ul li a {
+    color: #b5afaf;
+    text-transform: uppercase
+}
+
+.copy_text {
+    float: right;
+    width: 60%
+}
+
+.copy_text p {
+    text-align: right;
+    width: 100%;
+    color: #3b3b3b;
+    font-size: 16px
+}
+
+.copy_text a {
+    color: #3b3b3b
+}
+
+.VieAllBrands {
+    width: 200px;
+    margin: 0 auto 60px;
+    color: var(--Black);
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid var(--Black);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    font-weight: bold
+}
+
+.SectionBanner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: var(--Gradient);
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    margin-top: 5%
+}
+
+.SectionBannerImage {
+    width: 45%;
+    display: block;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 12%;
+    max-width: 735px;
+    z-index: 2
+}
+
+.SectionBannerImage:before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    top: 0;
+    background: #000;
+    display: block;
+    position: absolute;
+    opacity: 0.4
+}
+
+.SectionBannerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.SectionBannerText {
+    position: absolute;
+    bottom: 15%;
+    padding-left: 140px;
+    z-index: 5;
+    left: 5%
+}
+
+.SectionBannerText h2 {
+    color: var(--White);
+    font-size: 96px;
+    line-height: 96px;
+    padding-bottom: 30px
+}
+
+.SectionBannerText p {
+    color: #e2e2e2;
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 600px
+}
+
+.SectionBannerText p span {
+    font-weight: bold
+}
+
+.SectionBanner:before {
+    background: url(../images/pattern-bg.png);
+    background-size: 30px;
+    background-repeat: repeat;
+    width: 5%;
+    height: 30%;
+    content: '';
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%)
+}
+
+.SectionBanner:after {
+    background: url(../images/pattern-bg.png);
+    background-size: 30px;
+    background-repeat: repeat;
+    width: 205px;
+    height: 205px;
+    right: 5%;
+    content: '';
+    bottom: -60px;
+    position: absolute;
+    z-index: 1
+}
+
+.SectionBannerButton {
+    width: auto;
+    display: flex;
+    width: auto;
+    margin-top: 60px;
+    max-width: 270px
+}
+
+.SectionBannerButton .ButtonIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(255, 0, 0, .20);
+    display: flex;
+    justify-content: space-between;
+    color: var(--White)
+}
+
+.SectionBannerButton .ButtonIcon i {
+    margin: auto auto;
+    width: 20px;
+    font-size: 20px
+}
+
+.SectionBannerButton .ButtonText {
+    display: flex;
+    justify-content: space-between;
+    color: var(--White);
+    margin: auto 0;
+    padding-left: 10px;
+    font-size: 16px;
+    max-width: 270px
+}
+
+.CarListing {
+    width: 100%;
+    padding: 5% 5%;
+    margin: 0 auto;
+    background: #f7f7f7
+}
+
+.CarListing h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--Black);
+    padding: 20px 0 40px;
+    text-align: center;
+    font-weight: 600
+}
+
+.CarListing h2:after {
+    width: 20%;
+    margin: 25px 0 0;
+    height: 2px;
+    position: relative;
+    background: rgba(255, 102, 0, 1);
+    background: linear-gradient(to right, rgba(255, 102, 0, 1)40%, rgba(255, 102, 0, 1)55%, rgba(242, 242, 242, 0)100%);
+    content: "";
+    display: block;
+    margin: 35px auto 0
+}
+
+.CarListing p {
+    font-size: 17px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    color: #6f6f6f;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.CarsList {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px
+}
+
+.CarsList:after {
+    content: '';
+    flex: auto
+}
+
+.CarsList .CarsListItem{
+    width: calc(33.33% - 14px);
+    display: block;
+    margin: 25px 20px 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,0.05) 0px 6px 10px 0px;
+  }
+  .CarsList .CarsListItem:nth-child(3n){
+    margin-right: 0;
+  }
+  .CarsList .CarsListItem .PriceAndBook {
+    font-size: 0;
+    padding: 0 0 0 0;
+}
+.CarsList .CarsListItem .PriceAndBook .Price  del{
+    display: none;
+}
+.CarsList .CarsListItem .PriceAndBook .Price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 0 5px;
+}
+.CarsList .CarsListItem .PriceAndBook .Price span {
+    color: #ca1818;
+    font-size: 20px;
+    font-weight: 700;
+}
+.CarsList .CarsListItem .PriceAndBook .Price del span {
+    color: #b79999;
+    font-size: 13px;
+    margin: 0 10px 0 0;
+    text-indent: 0;
+    text-decoration: line-through;
+}
+
+
+.CarsList .CarsListItem .PriceAndBook .Book {
+
+    height: 100%;
+    float: right;
+}
+.CarsList .CarsListItem .PriceAndBook .Book  a {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 16px;
+    display: block;
+    padding: 11px 21px;
+    font-weight: 700;
+    background: #848484;
+    border-radius: 37px;
+    margin-top: -10px;
+    transition: all .3s;
+}
+.CarsList .CarsListItem .PriceAndBook .Book  a:hover{
+    background: #e70b0b;
+    transition: all .3s;
+}
+
+.CarsListImage {
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+    display: block
+}
+
+.CarsListImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.CarsListInfo {
+    background: #fff;
+    width: 100%;
+    padding: 10px 20px
+}
+
+.CarTitle {
+    width: 100%
+}
+
+.CarTitle span.Brand {
+    width: 100%;
+    color: #a5a5a5
+}
+
+.CarTitle h3 {
+    width: 100%;
+    color: var(---B2);
+    font-size: 20px;
+    font-weight: 500
+}
+
+
+
+/* NEW CSS 2021  */
+
+.InnnerBanner {
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+}
+
+.CarListBanner {
+
+    background: var(--Black)url(../images/bg.png);
+
+}
+
+.InnnerBanner h1 {
+    width: 100%;
+    text-align: center;
+    padding: calc(10% + 20px) 0 10% 0;
+    font-size: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+
+.CarDetailPage {
+    position: relative;
+    padding-top: 105px;
+    background: #fff;
+}
+
+.CarDetailPage .DetailsTitleBar {
+    width: 100%;
+    padding: 15px 125px;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    z-index: 999;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: #e2e2e2;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .BackToBtn {
+    margin: auto 0;
+    color: #101010;
+    cursor: pointer;
+    padding-right: 10px;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .BackToBtn:hover {
+    opacity: 0.5;
+    transition: all .3s;
+
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Brand {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    margin: auto 0;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Model {
+    margin: auto 0;
+    margin-left: 15px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Model span {
+    margin-right: 10px;
+    border-right: 4px solid;
+    padding-right: 10px;
+}
+
+.CarDetailPage .DetailsTitleBar .BrandAndModel .Model span:last-of-type {
+    border: none;
+}
+
+.CarDetailPage .DetailsTitleBar .WhatsappBookBtn {
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 99;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #4cbb3d;
+}
+
+.CarDetailPage .DetailsTitleBar .WhatsappBookBtn img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages {
+    width: 100%;
+    padding: 0px 125px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-top: 40px;
+    margin-top: 85px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails {
+    width: 49%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap {
+    margin-top: 0px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .MonthlyBlock {
+    width: 48%;
+    display: flex;
+    height: 110px;
+    text-align: center;
+    border-radius: 5px;
+    background: #E6E6E6;
+    color: #313131;
+    text-transform: uppercase;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .MonthlyBlock span {
+    margin: auto 0;
+    display: block;
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .PriceBlock {
+    width: 48%;
+    display: flex;
+    height: 110px;
+    text-align: center;
+    border-radius: 5px;
+    background: #E6E6E6;
+    color: #313131;
+    text-transform: uppercase;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap .PriceBlock span {
+    margin: auto 0;
+    display: block;
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap h3 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .PriceAndMonthlyWrap h5 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .RoofType {
+    width: 31%;
+    display: flex;
+    height: 110px;
+    text-align: center;
+    border-radius: 5px;
+    background: #E6E6E6;
+    color: #313131;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .RoofType span {
+    margin: auto 0;
+    display: block;
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .Transmission {
+    width: 31%;
+    display: flex;
+    height: 110px;
+    text-align: center;
+    border-radius: 5px;
+    background: #E6E6E6;
+    color: #313131;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .Transmission span {
+    margin: auto 0;
+    display: block;
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .BodyType {
+    width: 31%;
+    display: flex;
+    height: 110px;
+    text-align: center;
+    border-radius: 5px;
+    background: #E6E6E6;
+    color: #313131;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap .BodyType span {
+    margin: auto 0;
+    display: block;
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .ViewDetailsWrap .CarMainDetailsWrap h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures {
+
+    padding: 60px 0 0;
+
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle h1 {
+    width: auto;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: left;
+    margin: auto 15px;
+    color: #000000;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle .BrandLogo {
+    width: 64px;
+    height: 64px;
+    margin: auto 0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle .BrandLogo img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-position: center;
+    object-fit: cover;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle .NewIcon {
+    width: 30px;
+    vertical-align: middle;
+    margin: auto 0;
+    padding: 20px 4px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .DescriptionAndFeatures .CarNameTitle .NewIcon img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .Description {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #cfcfcf;
+
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .Description p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    padding-right: 25px;
+
+}
+
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs {
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs {
+    width: 100%;
+    border-bottom: 1px dashed #cfcfcf;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs ul {
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs ul li h4 {
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .Faqs ul li p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    padding-right: 25px;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning {
+    width: 100%;
+    border-bottom: 1px dashed #cfcfcf;
+    padding: 15px 0;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning ul {
+    width: 100%;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning ul li {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning ul li h4 {
+    width: auto;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: left;
+    color: #575656;
+
+
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning ul li::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background-image: url(../images/icons/CheckIcon.svg);
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewDetails .FeaturesAndFaqs .FeaturesOrWarning ul li.Warning::before {
+
+    background-image: url(../images/icons/warning.svg);
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+
+
+.CarDetailPage .ViewDetailsAndImages .ViewImages {
+    width: 48%;
+    max-width: 812px;
+    position: sticky;
+    top: 0
+}
+
+.CarDetailPage .ViewDetailsAndImages .ViewImages .CarImagesGallery {
+    margin-top: 20px;
+    position: -webkit-sticky;
+    /* Safari */
+
+}
+
+.CarDetailPage .ContactDetails {
+    width: 100%;
+    padding: 15px 125px;
+    margin-top: 105px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: #e2e2e2;
+    color: #313131;
+
+}
+
+.CarDetailPage .ContactDetails .DepositAndReturn {
+    display: flex;
+    width: auto;
+    flex-flow: row wrap;
+}
+
+.CarDetailPage .ContactDetails .DepositAndReturn .Deposit {
+    display: block;
+    width: auto;
+}
+
+.CarDetailPage .ContactDetails .DepositAndReturn .Deposit .Icon {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.CarDetailPage .ContactDetails .DepositAndReturn .Deposit .Icon img {
+    width: 100%;
+}
+
+.CarDetailPage .ContactDetails .DepositAndReturn .Deposit .Count {
+    display: inline-block;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.35;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.CarDetailPage .ContactDetails .DepositAndReturn .Expiry {
+    display: inline-block;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.35;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 12px;
+    border-left: 1px solid;
+    margin-left: 20px;
+}
+
+.CarDetailPage .ContactDetails .Contacts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.CarDetailPage .ContactDetails .Contacts .ContactIconText {
+    width: auto;
+    margin-left: 20px;
+}
+
+.CarDetailPage .ContactDetails .Contacts .ContactIconText .ContactIcon {
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.CarDetailPage .ContactDetails .Contacts .ContactIconText .ContactIcon img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.CarDetailPage .ContactDetails .Contacts .ContactIconText .ContactLabel {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.33;
+    letter-spacing: 0.37px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #313131;
+}
+
+
+
+
+
+
+/* FORM 2021 */
+
+.ApplicationForm{
+ 
+    width: 100%;
+     
+    background-color: #ffffff;
+     
+    font-size: 1.25em;
+     
+    padding: 0 5% 50px;
+     
+    margin-top: 120px;
+     
+    box-sizing: border-box;
+    }
+    
+    
+    .ApplicationForm h1{
+        font-size: 24px;
+        padding-bottom: 52px;
+        text-align: center;
+        color: #01ac4f;
+    }
+    
+    .ApplicationForm *{
+     
+    box-sizing: border-box !important;
+    }
+    
+    .form .label, .form .checkbox-input + label, .form .option-input + label, .form .text-input, .form .textarea, .form .select, .customSelect, .form .message, .form .button {
+        padding: 0.75em 1em;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        outline: none;
+        line-height: normal;
+        border-radius: 0;
+        border: none;
+        background: none;
+        display: block;
+      }
+      
+      .form .label {
+        font-weight: bold;
+        color: black;
+        padding-top: 0;
+        padding-left: 0;
+        letter-spacing: 0.025em;
+        font-size: 1.2em;
+        line-height: 1.25;
+        position: relative;
+        z-index: 100;
+      }
+      .required .form .label:after, .form .required .label:after {
+        content: " *";
+        color: #E8474C;
+        font-weight: normal;
+        font-size: 0.75em;
+        vertical-align: top;
+      }
+      
+      .form .checkbox-input + label, .form .option-input + label, .form .text-input, .form .textarea, .form .select, .customSelect {
+        font: inherit;
+        line-height: normal;
+        width: 100%;
+        box-sizing: border-box;
+        background: #f3f3f3;
+        color: black;
+        position: relative;
+      }
+      .form .checkbox-input + label:placeholder, .form .option-input + label:placeholder, .form .text-input:placeholder, .form .textarea:placeholder, .form .select:placeholder, .customSelect:placeholder {
+        color: white;
+      }
+      .form .checkbox-input + label:-webkit-autofill, .form .option-input + label:-webkit-autofill, .form .text-input:-webkit-autofill, .form .textarea:-webkit-autofill, .form .select:-webkit-autofill, .customSelect:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px #f3f3f3 inset;
+        -webkit-text-fill-color: black;
+        border-top-color: #111111;
+        border-left-color: #111111;
+        border-right-color: #111111;
+      }
+      .form .checkbox-input + label:not(:focus):not(:active).error, .form .option-input + label:not(:focus):not(:active).error, .form .text-input:not(:focus):not(:active).error, .form .textarea:not(:focus):not(:active).error, .form .select:not(:focus):not(:active).error, .customSelect:not(:focus):not(:active).error, .error .form .checkbox-input + label:not(:focus):not(:active), .form .error .checkbox-input + label:not(:focus):not(:active), .error .form .option-input + label:not(:focus):not(:active), .form .error .option-input + label:not(:focus):not(:active), .error .form .text-input:not(:focus):not(:active), .form .error .text-input:not(:focus):not(:active), .error .form .textarea:not(:focus):not(:active), .form .error .textarea:not(:focus):not(:active), .error .form .select:not(:focus):not(:active), .form .error .select:not(:focus):not(:active), .error .customSelect:not(:focus):not(:active) {
+        background-size: 8px 8px;
+        background-image: linear-gradient(135deg, rgba(232, 71, 76, 0.5), rgba(232, 71, 76, 0.5) 25%, transparent 25%, transparent 50%, rgba(232, 71, 76, 0.5) 50%, rgba(232, 71, 76, 0.5) 75%, transparent 75%, transparent);
+        background-repeat: repeat;
+      }
+      .form:not(.has-magic-focus) .checkbox-input + label:active, .form:not(.has-magic-focus) .option-input + label:active, .form:not(.has-magic-focus) .text-input:active, .form:not(.has-magic-focus) .textarea:active, .form:not(.has-magic-focus) .select:active, .form:not(.has-magic-focus) .customSelect:active, .form:not(.has-magic-focus) .customSelect.customSelectFocus, .form:not(.has-magic-focus) .checkbox-input + label:focus, .form:not(.has-magic-focus) .option-input + label:focus, .form:not(.has-magic-focus) .text-input:focus, .form:not(.has-magic-focus) .textarea:focus, .form:not(.has-magic-focus) .select:focus, .form:not(.has-magic-focus) .customSelect:focus {
+        background: #f7f7f7;
+      }
+      
+      .form .message {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+        font-size: 0.625em;
+        color: white;
+      }
+      
+      .form .checkbox-input, .form .option-input {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      .form .checkbox-input + label, .form .option-input + label {
+        display: inline-block;
+        width: auto;
+        color: #4E4E4E;
+        position: relative;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        cursor: pointer;
+      }
+      .form .checkbox-input:focus + label, .form .option-input:focus + label, .form .checkbox-input:active + label, .form .option-input:active + label {
+        color: #4E4E4E;
+      }
+      .form .checkbox-input:checked + label, .form .option-input:checked + label {
+        color: white;
+        background: #01ac4f;
+      }
+      
+      .form .button {
+        font: inherit;
+        line-height: normal;
+        cursor: pointer;
+        background: #000000;
+        color: white;
+        font-weight: bold;
+        width: auto;
+        /* margin-left: auto; */
+        font-weight: bold;
+        /* padding-left: 2em; */
+        /* padding-right: 2em; */
+      }
+      .form .button:hover, .form .button:focus, .form .button:active {
+        color: white;
+        border-color: white;
+      }
+      .form .button:active {
+        position: relative;
+        top: 1px;
+        left: 1px;
+      }
+      
+    
+      .form {
+        max-width: 54em;
+        margin: 0 auto;
+        position: relative;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-flow: row wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: end;
+        align-items: flex-end;
+        margin: 0 auto;
+      }
+      .form .field {
+        width: 100%;
+        margin: 0 0 1.5em 0;
+      }
+      @media screen and (min-width: 40em) {
+        .form .field.half {
+          width: calc(50% - 28px);
+        }
+      }
+      .form .field.last {
+        margin-left: auto;
+      }
+      .form .field a {
+        color: #01ac4f;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    
+      .form .textarea {
+        max-width: 100%;
+      }
+      .form .select {
+        text-indent: 0.01px;
+        text-overflow: "" !important;
+        cursor: pointer;
+      }
+      .form .select::-ms-expand {
+        display: none;
+      }
+      .form .checkboxes, .form .options {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        overflow: hidden;
+      }
+      .form .checkbox, .form .option {
+        float: left;
+        margin: 1px;
+      }
+      
+      .customSelect {
+        pointer-events: none;
+      }
+      .customSelect:after {
+        content: "";
+        pointer-events: none;
+        width: 0.5em;
+        height: 0.5em;
+        border-style: solid;
+        border-color: white;
+        border-width: 0 3px 3px 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.625em;
+        right: 1em;
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+      .customSelect.customSelectFocus:after {
+        border-color: white;
+      }
+      
+      .magic-focus {
+        position: absolute;
+        z-index: 0;
+        width: 0;
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.15);
+        -webkit-transition: top 0.2s, left 0.2s, width 0.2s;
+        transition: top 0.2s, left 0.2s, width 0.2s;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        will-change: top, left, width;
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+      }
+
+
+
+
+
+
+      .SuccessMessage-section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3.5% 5% 5%;
+        background: #23272f;
+        background-repeat: repeat;
+        background-position: center;
+        min-height: calc(100vh - 23.6vh);
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+      svg * {
+        fill: none;
+        stroke: currentColor;
+    }
+
+    .obturateur1 {
+        stroke-width: 0;
+        stroke-miterlimit: 10;
+    }
+
+
+
+
+
+
+    .after-payment-section {
+        position: relative;
+        background-color: #23272f;
+    }
+
+
+    .message-box-success-error {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 99;
+        max-width: 500px;
+    }
+
+
+
+    .message-box {
+        box-shadow: rgb(0 0 0 / 44%) 2px 8px 24px;
+        font-family: roboto !important;
+        border-radius: 30px;
+        display: block;
+        padding: 20px 20px 40px;
+        background-color: #fff;
+        box-sizing: border-box;
+        width: 100%;
+        animation: scale .5s linear;
+        -webkit-animation: scale .5s linear;
+    }
+
+
+    .message-box h1 {
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .success-msg {
+        color: #9ccc5e;
+    }
+
+    .error-msg {
+        color: #e54c41;
+    }
+
+    .message-box p {
+        font-size: 18px;
+        line-height: 24px;
+        color: #606060;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .imoji-icon {
+        max-width: 190px;
+        margin: 0 auto;
+    }
+
+    .imoji-icon img {
+        max-width: 100%;
+    }
+
+
+    .success-msg a {
+        max-width: 120px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        text-decoration: none !important;
+        font-size: 18px;
+        color: #fff;
+        background-color: #9ccc5e;
+        padding: 10px 0;
+        box-shadow: rgba(146,181,0,0.55) 1px 4px 8px;
+        transition: all .3s;
+        transform-origin: center;
+        transform: scale3d(1,1,1) translateY(0px);
+        border-radius: 50px;
+    }
+
+
+
+    .error-msg a {
+        max-width: 120px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        text-decoration: none !important;
+        font-size: 18px;
+        color: #fff;
+        transition: all .3s;
+        transform-origin: center;
+        transform: scale3d(1,1,1) translateY(0px);
+        border-radius: 50px;
+        background-color: #d23643;
+        padding: 10px 0;
+        box-shadow: rgba(216, 19, 19, 0.55) 1px 4px 8px;
+        animation-delay: 5s;
+    }
+
+
+
+
+    .message-box a:hover {
+        transform: scale3d(1.1,1.1,1.1) translateY(10px);
+        box-shadow: 0px 10px 20px;
+    }
+
+
+
+
+    .wave {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .wave span {
+        display: block;
+        min-width: 10px;
+        min-height: 10px;
+        position: relative;
+        display: inline-block;
+    }
+
+
+
+
+
+    @keyframes scale {
+        0% {
+            opacity: 0;
+            -ms-transform: scale(0);
+            -moz-transform: scale(0);
+            -webkit-transform: scale(0);
+            -o-transform: scale(0);
+            transform: scale(0);
+        }
+
+        80% {
+            opacity: 1;
+            -ms-transform: scale(1.26);
+            -moz-transform: scale(1.26);
+            -webkit-transform: scale(1.26);
+            -o-transform: scale(1.26);
+            transform: scale(1.26);
+        }
+
+        100% {
+            opacity: 1;
+            -ms-transform: scale(1);
+            -moz-transform: scale(1);
+            -webkit-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+
+
+
+
+    .cd-popup {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        z-index: 9999999999999999;
+    }
+
+    .cd-popup.is-visible {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+        -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .cd-popup-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        max-width: 400px;
+        border-radius: .25em .25em .4em .4em;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translate(-50%,-40%);
+        -moz-transform: translate(-50%,-40%);
+        -ms-transform: translate(-50%,-40%);
+        -o-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-backface-visibility: hidden;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+
+
+    .is-visible .cd-popup-container {
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+
+
+
+
+
+
+    .premium-alert-box {
+        box-shadow: rgba(0, 0, 0, 0.94) 2px 8px 24px;
+        font-family: roboto !important;
+        border-radius: 30px;
+        display: block;
+        padding: 20px 20px 40px;
+        background-color: #fff;
+        box-sizing: border-box;
+        width: 100%;
+        animation: scale .5s linear;
+        -webkit-animation: scale .5s linear;
+    }
+
+
+    .premium-alert-box h1 {
+        font-size: 28px;
+        line-height: 28px;
+        color: #37484f;
+        text-align: center;
+    }
+
+
+    .premium-alert-box p {
+        font-size: 18px;
+        line-height: 24px;
+        color: #606060;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .premium-icon {
+        max-width: 190px;
+        margin: 0 auto;
+    }
+
+    .premium-icon img {
+        max-width: 100%;
+    }
+
+
+    .premium-alert-box a {
+        max-width: 120px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        text-decoration: none !important;
+        font-size: 18px;
+        color: #fff;
+        background-color: #fb3f73;
+        padding: 10px 0;
+        box-shadow: rgba(242,22,132,0.55) 1px 4px 8px;
+        transition: all .3s;
+        transform-origin: center;
+        transform: scale3d(1,1,1) translateY(0px);
+        border-radius: 50px;
+    }
+
+
+    .premium-alert-box a:hover {
+        transform: scale3d(1.1,1.1,1.1) translateY(10px);
+        box-shadow: rgba(204,165,52,.2) 0px 10px 20px;
+    }
+
+
+
+
+
+
+
+    .FadeInUp {
+        animation: fadeInUp .3s linear;
+        animation-delay: 2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+
+
+
+
+
+
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(0,20px,0);
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeInUp {
+        from {
+            transform: translate3d(0,20px,0);
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+

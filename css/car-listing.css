@@ -1,0 +1,97 @@
+
+/*
+ * CarsList card
+ */
+ .CarsList {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    margin-top: 50px;
+  }
+  .CarsList:after{
+    content: '';
+    flex: auto;
+    
+  }
+  .CarsList .CarsListItem{
+    width: calc(33.33% - 14px);
+    display: block;
+    margin: 25px 20px 0 0;
+  }
+  .CarsList .CarsListItem:nth-child(3n){
+    margin-right: 0;
+  }
+  .CarsList .CarsListItem .PriceAndBook {
+    font-size: 0;
+    padding: 0 0 0 0;
+}
+
+.CarsList .CarsListItem .PriceAndBook .Price {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 0;
+}
+.CarsList .CarsListItem .PriceAndBook .Price span {
+    color: #3a3a3a;
+    font-size: 24px;
+    font-weight: 300;
+}
+.CarsList .CarsListItem .PriceAndBook .Price del span {
+    color: #b79999;
+    font-size: 13px;
+    margin: 0 10px 0 0;
+    text-indent: 0;
+    text-decoration: line-through;
+}
+
+
+.CarsList .CarsListItem .PriceAndBook .Book {
+
+    height: 100%;
+    float: right;
+}
+.CarsList .CarsListItem .PriceAndBook .Book  a {
+    color: #ff2222;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    padding: 11px 15px;
+    font-weight: 700;
+    background: white;
+    border-radius: 37px;
+    margin-top: -10px;
+}
+
+.CarsListImage{
+    width: 100%;
+    height: 240px;
+    background: #f1f1f1;
+    display: block;
+    border:1px solid rgba(0,0,0,0.001);
+}
+.CarsListImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.CarsListInfo{
+    background: #f3f3f3;
+    width: 100%;
+    padding:10px 20px;
+}
+.CarTitle{
+    width: 100%;
+
+}
+
+.CarTitle span.Brand{
+    width: 100%;
+    color: #a5a5a5;
+}
+.CarTitle h3{
+    width: 100%;
+    color:var(---B2);
+    font-size: 18px;
+}
